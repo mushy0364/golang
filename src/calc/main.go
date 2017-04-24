@@ -23,11 +23,16 @@ func div(x, y float64) float64 {
 	return x / y
 }
 
+func root(x float64) float64 {
+	return Sqrt(x)
+}
+
 func main() {
 	fmt.Println("[a] Addition")
 	fmt.Println("[s] Subtraction")
 	fmt.Println("[m] Multiplication")
 	fmt.Println("[d] Division")
+	fmt.Println("[r] Square Root")
 	option, _ := i.Prompt("> ")
 	num1, _ := i.Prompt("First number: ")
 	num2, _ := i.Prompt("Second number: ")
